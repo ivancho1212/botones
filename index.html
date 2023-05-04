@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .buttons-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            justify-items: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+          }
+          
+          button {
+            width: 120px;
+            margin: 0;
+            padding: 10px;
+          }
+          
+        @keyframes spin {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+    .button-1{
+        padding: 10px 20px;
+        background-color: #e65100;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .button-2{
+        padding: 10px 20px;
+        background-color: #03a9f4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .button-3{
+        padding: 10px 20px;
+        background-color: #76ff03;
+        color: #33691e;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .button-4{
+        padding: 10px 20px;
+        background-color: #7c4dff ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .button-5{
+        padding: 10px 20px;
+        background-color: #64ffda ;
+        color: #1a237e;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .button-6{
+        padding: 10px 20px;
+        background-color: #827717;
+        color: #eeff41;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .button-7{
+        padding: 10px 20px;
+        background-color: #ff3d00  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    
+      .button-8{
+        padding: 10px 20px;
+        background-color: #f50057  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    
+      .button-9{
+        padding: 10px 20px;
+        background-color: #8e24aa;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    
+      .button-10{
+        padding: 10px 20px;
+        background-color: #000000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    
+      .button-11{
+        padding: 10px 20px;
+        background-color: #ffff00  ;
+        color: #f57f17;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+    
+      .button-12{
+        padding: 10px 20px;
+        background-color: #c6ff00;
+        color: #1b5e20;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    
+      .button-13{
+        padding: 10px 20px;
+        background-color: #004d40  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    
+      .button-14{
+        padding: 10px 20px;
+        background-color: #f06292;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        animation: spin 4s linear infinite;
+      }
+    
+      .button-15{
+        padding: 10px 20px;
+        background-color: #d4e157;
+        color: #827717;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .button-1:hover {
+        background-color: #ffb74d;
+        color: #fff;
+      }
+      .button-2:hover {
+  transform: scale(1.2);
+}
+.button-3:hover {
+  border: 2px solid #33691e;
+  color: #33691e;
+}
+.button-4:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+.button-5:hover {
+  color:#82b1ff;
+}
+.button-6:hover {
+    border-radius: 0%;
+}
+.button-7:hover {
+  box-shadow: 2px 2px 5px #666;
+}
+.button-8:hover {
+  transform: rotate(45deg);
+}
+.button-9:hover {
+    transform: scale(0.95);
+}
+.button-10 {
+    position: relative;
+    top: 0;
+    transition: top 0.3s ease;
+  }
+  
+  .button-10:hover {
+    top: -5px;
+  }
+  
+.button-11:hover {
+    transform: rotateY(180deg);
+}
+.button-12:hover {
+    transform: rotateX(180deg);
+}
+.button-13:hover {
+  transform: rotate(180deg);
+}
+.button-14:hover {
+    animation-play-state: paused;
+  }
+
+  .button-15 {
+    position: relative;
+    top: 0;
+    transition: top 0.3s ease;
+  }
+  
+  .button-15:hover {
+    top: 5px;
+  }
+  
+    </style>
+</head>     
+<body>
+    <div class="buttons-container">
+  <button class="button-1">Danger</button>
+  <button class="button-2">Danger</button>
+  <button class="button-3">Danger</button>
+  <button class="button-4">Danger</button>
+  <button class="button-5">Danger</button>
+  <button class="button-6">Danger</button>
+  <button class="button-7">Danger</button>
+  <button class="button-8">Danger</button>
+  <button class="button-9">Danger</button>
+  <button class="button-10">Danger</button>
+  <button class="button-11">Danger</button>
+  <button class="button-12">Danger</button>
+  <button class="button-13">Danger</button>
+  <button class="button-14">Danger</button>
+  <button class="button-15">Danger</button>
+</div>
+    
+</body>
+
+</html>
